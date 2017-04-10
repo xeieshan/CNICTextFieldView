@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" id="yw3-U3-8Nh" customClass="CNICTextFieldView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="260" text="CNIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AL-Wq-WsH">
+                    <rect key="frame" x="16" y="8" width="40" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="272" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jsc-aQ-3fk">
+                    <rect key="frame" x="16" y="57" width="85" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="3if-YJ-ttU"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="yw3-U3-8Nh" id="a3L-IS-fJQ"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="272" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zuI-Gp-0z2">
+                    <rect key="frame" x="109" y="57" width="202" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="yw3-U3-8Nh" id="jon-Va-3JV"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="272" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upy-Gd-2cM">
+                    <rect key="frame" x="319" y="57" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="UQP-8c-gqi"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="yw3-U3-8Nh" id="onN-vS-F78"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Jsc-aQ-3fk" firstAttribute="top" secondItem="7AL-Wq-WsH" secondAttribute="bottom" constant="15" id="1oK-xH-SQx"/>
+                <constraint firstItem="upy-Gd-2cM" firstAttribute="leading" secondItem="zuI-Gp-0z2" secondAttribute="trailing" constant="8" id="38v-wb-Ovz"/>
+                <constraint firstAttribute="trailing" secondItem="upy-Gd-2cM" secondAttribute="trailing" constant="16" id="7rH-hG-DRv"/>
+                <constraint firstItem="7AL-Wq-WsH" firstAttribute="leading" secondItem="yw3-U3-8Nh" secondAttribute="leading" constant="16" id="97F-0t-YUb"/>
+                <constraint firstAttribute="bottom" secondItem="zuI-Gp-0z2" secondAttribute="bottom" constant="16" id="AJO-Rl-2Vq"/>
+                <constraint firstItem="zuI-Gp-0z2" firstAttribute="top" secondItem="Jsc-aQ-3fk" secondAttribute="top" id="F1T-oM-jtX"/>
+                <constraint firstItem="Jsc-aQ-3fk" firstAttribute="leading" secondItem="7AL-Wq-WsH" secondAttribute="leading" id="XQH-3q-NeC"/>
+                <constraint firstItem="zuI-Gp-0z2" firstAttribute="leading" secondItem="Jsc-aQ-3fk" secondAttribute="trailing" constant="8" id="dID-lE-AaB"/>
+                <constraint firstItem="upy-Gd-2cM" firstAttribute="top" secondItem="zuI-Gp-0z2" secondAttribute="top" id="eeB-s0-wkH"/>
+                <constraint firstItem="7AL-Wq-WsH" firstAttribute="top" secondItem="yw3-U3-8Nh" secondAttribute="top" constant="8" id="k3i-Zf-aTZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cnicTextFirst" destination="Jsc-aQ-3fk" id="fcH-H2-h7C"/>
+                <outlet property="cnicTextSecond" destination="zuI-Gp-0z2" id="YMW-Dv-mnY"/>
+                <outlet property="cnicTextThird" destination="upy-Gd-2cM" id="xvO-aX-4fm"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="-314.5"/>
+        </view>
+    </objects>
+</document>
